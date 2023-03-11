@@ -45,7 +45,7 @@ const projects = [
     cite: "https://marvel-info-portal-react.vercel.app/",
   },
   {
-    title: "Мониторинга вакансий",
+    title: "Мониторинг вакансий",
     skills: "React, Redux-toolkit",
     img: project05,
     imgBig: project05Big,

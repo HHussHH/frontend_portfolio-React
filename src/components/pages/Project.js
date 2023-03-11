@@ -13,14 +13,14 @@ const Project = () => {
         <div className="project-details">
           <motion.h1
             animate={{ scale: [0, 1] }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1.2 }}
             className="title-1"
           >
             {project.title}
           </motion.h1>
           <motion.img
             animate={{ x: [-1000, 0] }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.8 }}
             src={project.imgBig}
             alt={project.title}
             className="project-details__cover"
