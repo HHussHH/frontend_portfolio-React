@@ -1,27 +1,46 @@
-import Header from "../../components/header/Header"
+import Header from "../../components/header/Header";
+import { motion } from "framer-motion";
+
 const Home = () => {
-    return (
-        <>
-            <Header />
+  return (
+    <>
+      <Header />
+      <main className="section" style={{ overflow: "hidden" }}>
+        <div className="container">
+          <ul className="content-list">
+            <li className="content-list__item">
+              <motion.h2
+                animate={{
+                  x: [-2000, 0],
+                }}
+                transition={{ duration: 1.8 }}
+                className="title-2"
+              >
+                Frontend
+              </motion.h2>
+              <p>
+                JavaScript, TypeScript, ReactJS, Redux, Redux-toolkit, HTML,
+                CSS, NPM, BootStrap,Axios, MaterialUI, Yarn, framer-motion,
+                StyledComponents
+              </p>
+            </li>
+            <li className="content-list__item">
+              <motion.h2
+                animate={{
+                  x: [2000, 0],
+                }}
+                transition={{ duration: 1.8 }}
+                className="title-2"
+              >
+                Backend
+              </motion.h2>
+              <p>NodeJS, MySQL, Firebase</p>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </>
+  );
+};
 
-            <main className="section">
-                <div className="container">
-
-                    <ul className="content-list">
-                        <li className="content-list__item">
-                            <h2 className="title-2">Frontend</h2>
-                            <p>JavaScript, TypeScript, ReactJS, Angular, Redux, HTML, CSS, NPM, BootStrap, MaterialUI, Yarn, TailwindCSS, StyledComponents</p>
-                        </li>
-                        <li className="content-list__item">
-                            <h2 className="title-2">Backend</h2>
-                            <p>NodeJS, MySQL, MongoDB, PHP, Laravel</p>
-                        </li>
-                    </ul>
-
-                </div>
-            </main>
-        </>
-    )
-}
-
-export default Home
+export default Home;

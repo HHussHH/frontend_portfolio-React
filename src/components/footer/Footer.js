@@ -1,30 +1,51 @@
-import vk from "../../img/icons/vk.svg"
-import instagram from "../../img/icons/instagram.svg"
-import twitter from "../../img/icons/twitter.svg"
-import gitHub from "../../img/icons/gitHub.svg"
-import linkedIn from "../../img/icons/linkedIn.svg"
-
-import "./style.scss"
+import { BsTelegram } from "react-icons/bs";
+import { AiFillGithub } from "react-icons/ai";
+import { SlSocialVkontakte } from "react-icons/sl";
+import "./style.scss";
 
 const Footer = () => {
-    return (
-        <footer className="footer">
-            <div className="container">
-                <div className="footer__wrapper">
-                    <ul className="social">
-                        <li className="social__item"><a href="#!"><img src={vk} alt="Link" /></a></li>
-                        <li className="social__item"><a href="#!"><img src={instagram} alt="Link" /></a></li>
-                        <li className="social__item"><a href="#!"><img src={twitter} alt="Link" /></a></li>
-                        <li className="social__item"><a href="#!"><img src={gitHub} alt="Link" /></a></li>
-                        <li className="social__item"><a href="#!"><img src={linkedIn} alt="Link" /></a></li>
-                    </ul>
-                    <div className="copyright">
-                        <p>© 2022 frontend-dev.com</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    )
-}
+  return (
+    <footer className="footer">
+      <div className="container">
+        <div className="footer__wrapper">
+          <ul className="social">
+            <li className="social__item">
+              <a
+                href="https://vk.com/top_sportorg"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <SlSocialVkontakte size={40} color="#fff" />
+              </a>
+            </li>
 
-export default Footer
+            <li className="social__item">
+              <a
+                href="https://t.me/MustafaevN"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsTelegram size={40} color="#fff" />
+              </a>
+            </li>
+
+            <li className="social__item">
+              <a
+                href="https://github.com/HHussHH"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiFillGithub size={40} color="#fff" />
+              </a>
+            </li>
+          </ul>
+          <div className="copyright">
+            <p>© 2023</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
